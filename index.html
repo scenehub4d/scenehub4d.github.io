@@ -133,25 +133,25 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-<!-- Teaser video-->
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop playsinline height="100%" playsinline webkit-playsinline>
-        <source src="static/videos/xx.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
     </div>
-  </div>
-</section> -->
-<!-- End teaser video -->
+  </section>
+
+
+  <!-- Teaser video-->
+  <!-- <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="" id="tree" autoplay controls muted loop playsinline height="100%" playsinline webkit-playsinline>
+          <source src="static/videos/xx.mp4"
+          type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        </h2>
+      </div>
+    </div>
+  </section> -->
+  <!-- End teaser video -->
 
   <!-- Teaser Figure -->
   <section class="section teaser-figure" style="padding-top: 0rem;">
@@ -169,227 +169,340 @@
   </section>
   <!-- Teaser Figure -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We present a new dataset and evaluation framework for benchmarking 6-DoF 4D volumetric scenes. Our dataset captures long,
-            dynamic sequences across diverse real-world indoor environments, with synchronized multi-view RGB-D streams, calibrated camera
-            poses, and high-resolution background geometry reconstructed via photogrammetry and LiDAR. We provide a unified representation
-            suite including point clouds, textured meshes, and Gaussian splats, along with tools for format conversion, rendering, and metric evaluation. 
-            To support structured comparison and perceptual analysis, we introduce novel metrics such as Geometry Complexity Score (GCS), SSIM-aware GCS, and Volumetric Temporal Information (V-TI). 
-            These components enable detailed characterization of spatial and temporal complexity, and facilitate benchmarking for tasks such as compression, view synthesis, and scene-aware rendering.
-            Our dataset bridges gaps in scale, quality, and realism found in existing benchmarks, providing a comprehensive foundation for immersive 3D research.
-          </p>
-        </div>
+  <section class="section" style="padding-top: 1rem; padding-bottom: 1rem;">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Supported Features</h2>
+      <div class="table-container">
+        <table class="table is-striped is-bordered is-hoverable is-fullwidth has-text-centered" style="white-space: nowrap;">
+          <thead>
+            <tr>
+              <th>Camera Pose</th>
+              <th>Per&nbsp;view RGBD</th>
+              <th>Point Cloud</th>
+              <th>Mesh</th>
+              <th>Gaussian Splat</th>
+              <th>Photogrammetry Backdrop</th>            
+              <th>Multi-person</th>
+              <th>Interactive Objects</th>
+              <th>Full Scene</th>
+              <!-- <th>Avg Seq. Length</th> -->
+              <th>Metric</th>
+              <th>Software Suite</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <!-- <td>≈ 2 min</td> -->
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
 
-
-<!-- Image carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <img src="static/images/xx.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/xx.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/xx.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <img src="static/images/xx.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section> -->
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/xx" frameborder="0" allow="playsinline webkit-playsinline autoplay; encrypted-media" allowfullscreen></iframe>
+  <!-- Youtube video -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Teaser Video</h2>          
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/u9nLCThjoBc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section> -->
-<!-- End youtube video -->
+  </section>
+  <!-- End youtube video -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Lab Area</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/arena/arena_scene1_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/arena/arena_scene2_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/arena/arena_scene3_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video4">
-          <video poster="" id="video4" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/arena/arena_scene4_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video5">
-          <video poster="" id="video5" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/arena/arena_scene5_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video6">
-          <video poster="" id="video6" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/arena/arena_scene6_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              We present a new dataset and evaluation framework for benchmarking 6-DoF 4D volumetric scenes. Our dataset captures long,
+              dynamic sequences across diverse real-world indoor environments, with synchronized multi-view RGB-D streams, calibrated camera
+              poses, and high-resolution background geometry reconstructed via photogrammetry and LiDAR. We provide a unified representation
+              suite including point clouds, textured meshes, and Gaussian splats, along with tools for format conversion, rendering, and metric evaluation. 
+              To support structured comparison and perceptual analysis, we introduce novel metrics such as Geometry Complexity Score (GCS), SSIM-aware GCS, and Volumetric Temporal Information (V-TI). 
+              These components enable detailed characterization of spatial and temporal complexity, and facilitate benchmarking for tasks such as compression, view synthesis, and scene-aware rendering.
+              Our dataset bridges gaps in scale, quality, and realism found in existing benchmarks, providing a comprehensive foundation for immersive 3D research.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End video carousel -->
+  </section>
+  <!-- End paper abstract -->
 
-<!-- Couch Area (3 videos) -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Couch</h2>
-      <div id="couch-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="couchVideo1" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/couch/couch_scene1_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
+  <!-- Image carousel -->
+  <!-- <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <img src="static/images/xx.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            First image description.
+          </h2>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="couchVideo2" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/couch/couch_scene2_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
+        <div class="item">
+          <img src="static/images/xx.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+            Second image description.
+          </h2>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="couchVideo3" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/couch/couch_scene3_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
-        </div>
+        <div class="item">
+          <img src="static/images/xx.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+          Third image description.
+        </h2>
       </div>
+      <div class="item">
+        <img src="static/images/xx.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Fourth image description.
+        </h2>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section> -->
+  <!-- End image carousel -->
+
+  <section class="section teaser-figure">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Dataset Summary</h2>       
+      <figure class="image">
+        <img src="static/images/dataset_summary_nocaption.png" alt="SceneHub Teaser Figure" style="width: 100%; height: auto;">
+      </figure>
+      <div class="has-text-centered" style="margin-top: 0.5rem;">
+        <p class="is-size-6 has-text-centered" style="margin-top: 0.75rem;">
+          <strong>Table 1:</strong>
+          Dataset description with scene size, actor count, frame count, triangle density, 
+          <strong>GCS</strong>, <strong>GCS<sub>SSIM≥0.98</sub></strong>, 
+          <strong>Depth SI</strong>, and <strong>V-TI</strong>.
+        </p>
+      </div>
+  </section>
+
+  <!-- MathJax for equations -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <section class="section" style="padding-top: 1rem;">
+    <div class="container is-max-desktop">
+      <h2 class="title is-4 is-clickable" onclick="toggleMetrics()" style="cursor: pointer;">
+        ▶ Our Metric Description 
+      </h2>
+
+      <div id="metrics-content" style="display: none;">
+
+        <!-- GCS -->
+        <section class="section" style="padding-top: 1rem; padding-bottom: 0;">
+          <h2 class="title is-4">Geometry Complexity Score (GCS)</h2>
+          <div class="content">
+            <p>
+              The <strong>GCS</strong> quantifies surface complexity using triangle density, shape irregularity, and global scene scale:
+            </p>
+            <p style="text-align: center; font-size: 1.1rem;">
+              \[
+              \mathrm{GCS} = 
+              \left( \frac{N_{\mathrm{tri}}}{A_{\mathrm{total}}} \right) 
+              \cdot \left( 1 + \lambda_1 \cdot \frac{\sigma_{\mathrm{area}}}{\mu_{\mathrm{area}}} 
+              + \lambda_2 \cdot \frac{\sigma_{\theta}}{\mu_{\theta}} \right) 
+              \cdot \log(1 + A_{\mathrm{total}})
+              \]
+            </p>
+            <p>
+              where \( N_{\mathrm{tri}} \): triangle count, 
+              \( A_{\mathrm{total}} \): total surface area, 
+              \( \sigma, \mu \): std/mean of triangle area and dihedral angle,
+              and \( \lambda_1, \lambda_2 \): irregularity weights.
+            </p>
+          </div>
+        </section>
+
+        <!-- Multi-view SSIM -->
+        <section class="section" style="padding-top: 1rem; padding-bottom: 0;">
+          <h2 class="title is-4">Multi-view SSIM</h2>
+          <div class="content">
+            <p>
+              To measure perceptual quality across views, we compute multi-view SSIM over four pose types: original, shifted, interpolated, and random.
+              Each camera pose \( \mathbf{P}_i = [\mathbf{R}_i \mid \mathbf{t}_i] \) defines the viewpoint and rendering frame.
+            </p>
+            <p style="text-align: center; font-size: 1.1rem;">
+              \[
+              \mathrm{SSIM}_{\mathrm{multi}}^{(v)} = \frac{1}{N_v} \sum_{P_i \in \mathcal{P}_v}
+              \mathrm{SSIM}(R(P_i), G(P_i))
+              \]
+            </p>
+            <p>
+              where \( R(P_i) \), \( G(P_i) \) are rendered and ground-truth images at pose \( P_i \). 
+              This enables perceptual evaluation across diverse viewpoints.
+            </p>
+          </div>
+        </section>
+
+        <!-- SSIM-aware GCS -->
+        <section class="section" style="padding-top: 1rem; padding-bottom: 0;">
+          <h2 class="title is-4">SSIM-aware Geometry Complexity</h2>
+          <div class="content">
+            <p>
+              We define <strong>SSIM-aware GCS</strong> as the minimum GCS of a simplified mesh that preserves a
+              multi-view SSIM above a threshold (e.g., \( \tau = 0.98 \)). This identifies the 
+              <em>geometry budget required for perceptual fidelity</em>.
+            </p>
+            <p>
+              Among various mesh decimation levels, we select the lowest-complexity mesh satisfying \( \text{SSIM}_{\text{multi}} \geq \tau \),
+              and compute \( \text{GCS}_{\text{SSIM} \geq \tau} \) accordingly.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Toggle Script -->
+  <script>
+  function toggleMetrics() {
+    const content = document.getElementById('metrics-content');
+    const title = document.querySelector('.title.is-3');
+    if (content.style.display === 'none') {
+      content.style.display = 'block';
+      title.innerHTML = '▼ Metrics';
+    } else {
+      content.style.display = 'none';
+      title.innerHTML = '▶ Metrics';
+    }
+  }
+  </script>
+
+
+  <section class="section teaser-figure" style="padding-top: 0rem; padding-bottom: 1rem;">
+    <div class="container is-max-desktop">
+      <h2 class="title is-4">Raw data size comparison across 3D representations</h2>       
+      <figure class="image" style="text-align: center;">
+        <img src="static/images/3d_representation_comparison_nocaption.png"
+            alt="SceneHub Teaser Figure"
+            style="width: 50%; height: auto; display: inline-block;">
+      </figure>
+  <p class="has-text-centered is-size-6" style="margin-top: 0.5rem;">
+    <strong>Table 2:</strong>
+    Raw data size comparison across 3D representations for one temporal frame <em>t</em>
+    (<span style="color: #d77f00; font-weight: bold;">Geometry</span>,
+    <span style="color: #427cc9; font-weight: bold;">Color component</span>).<br>
+    <em>N<sub>cam</sub></em>, <em>P</em>, <em>V</em>, <em>T</em>, and <em>G</em>
+    denote the number of camera views, points, vertices, triangles, and gaussians, respectively.
+  </p>
+  </section>
+
+<section class="section" style="padding-top: 1rem;">
+  <div class="container is-max-desktop">
+    <h2 class="title is-4">Camera Pose Variants</h2>
+    <div class="content">
+      <p>
+        Each scene includes calibrated <strong>original camera extrinsics</strong> along with three types of
+        <strong>virtual camera poses</strong> to enable view-aware evaluation. 
+      </p>
+      <ul>
+        <li><strong>Shifted views:</strong> Slight offsets from the original pose (up/down/left/right).</li>
+        <li><strong>Interpolated views:</strong> Midpoints between camera pairs using Slerp and linear translation.</li>
+        <li><strong>Random views:</strong> Uniformly sampled within the scene volume, looking at the center.</li>
+      </ul>
+      <p>
+        These variants allow evaluating 3D reconstruction fidelity under diverse viewpoint conditions.
+      </p>
+
+      <!-- Image with caption -->
+      <figure class="image" style="margin-top: 1.5rem; text-align: center;">
+        <img src="static/images/camera_views.png" alt="Camera pose visualization" style="max-width: 100%;">
+        <figcaption style="margin-top: 0.75rem; font-size: 0.95rem;">
+          <strong>Figure:</strong> Camera pose visualization in the capture room. 
+          <div style="margin-top: 0.3rem;">
+            <strong>
+              <span style="color: red;">Original</span> (cam1–4), 
+              <span style="color: blue;">Interpolated</span>, 
+              <span style="color: black;">Shifted</span>, 
+              <span style="color: green;">Random</span> viewpoint.
+            </strong>
+          </div>
+        </figcaption>
+
     </div>
   </div>
 </section>
 
-<!-- Mill18 Area (2 videos) -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Factory</h2>
-      <div id="mill19-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="mill19Video1" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/mill19/mill19_scene1_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="mill19Video2" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/mill19/mill19_scene2_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Kitchen Area (3 videos) -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Kitchen</h2>
-      <div id="kitchen-carousel" class="carousel results-carousel">
-        <!-- <div class="item item-video1">
-          <video poster="" id="kitchenVideo1" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/kitchen/kitchen_scene1_2_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
-        </div> -->
-        <div class="item item-video2">
-          <video poster="" id="kitchenVideo2" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/kitchen/kitchen_scene2_2_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="kitchenVideo3" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/kitchen/kitchen_scene3_2_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Whiteboard Area (3 videos) -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Whiteboard/Hallway</h2>
-      <div id="whiteboard-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="whiteboardVideo1" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/whiteboard/whiteboard_scene1_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="whiteboardVideo2" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/whiteboard/whiteboard_scene2_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="whiteboardVideo3" autoplay controls muted loop playsinline height="100%">
-            <source src="static/videos/whiteboard/whiteboard_scene3_1080p_2Mbps.mp4" type="video/mp4">
-          </video>
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">      
+        <h2 class="title is-3">Videos by Scene</h2>
+        <div id="kitchen-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://youtube.com/embed/cySqkwzAQPk"
+                title="arena" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="item item-video2">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://youtube.com/embed/elKYAvV9EhI"
+                title="couch" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="item item-video3">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://youtube.com/embed/pNZCnt4iDRY"
+                title="mill19" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="item item-video4">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://youtube.com/embed/qvW6UYFPfzE"
+                title="kitchen" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="item item-video5">
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://youtube.com/embed/Utg9e6gXdRc"
+                title="whiteboard" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>                        
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 <!-- Paper poster -->
 <!-- <section class="hero is-small is-light">
@@ -434,11 +547,6 @@
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
