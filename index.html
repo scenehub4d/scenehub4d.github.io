@@ -68,7 +68,7 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Carnegie Mellon University, <sup>2</sup>Northeastern University<br>Under review</span>
+                    <span class="author-block"><sup>1</sup>Carnegie Mellon University, <sup>2</sup>Northeastern University<br>Under Review</span>
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div> 
 
@@ -81,7 +81,7 @@
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>Paper (Coming Soon)</span>
                       </a>
                     </span>
 
@@ -118,6 +118,15 @@
                     <span>Dataset</span>
                   </a>
                 </span>
+                <span class="link-block">
+                  <a href="https://github.com/scenehub4d/SceneHub/blob/main/README.md" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-markdown"></i> <!-- Markdown icon -->
+                    </span>
+                    <span>Dataset Readme</span>
+                  </a>
+                </span>            
                 <!-- ArXiv abstract Link -->
 <!--                 <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
@@ -311,35 +320,55 @@
   <section class="section" style="padding-top: 1rem;">
     <div class="container is-max-desktop">
       <h2 class="title is-4 is-clickable" onclick="toggleMetrics()" style="cursor: pointer;">
-        ▶ Our Metric Description 
+        <span id="metrics-toggle-symbol">►</span> Metric Description
       </h2>
 
       <div id="metrics-content" style="display: none;">
-
         <!-- GCS -->
-        <section class="section" style="padding-top: 1rem; padding-bottom: 0;">
+  
+      <section class="section" style="padding-top: 1rem;">
+        <div class="container is-max-desktop">
           <h2 class="title is-4">Geometry Complexity Score (GCS)</h2>
           <div class="content">
             <p>
-              The <strong>GCS</strong> quantifies surface complexity using triangle density, shape irregularity, and global scene scale:
+              To quantify the geometric complexity of our dataset, we define the 
+              <strong>Geometry Complexity Score</strong> (GCS) as:
             </p>
+
             <p style="text-align: center; font-size: 1.1rem;">
               \[
-              \mathrm{GCS} = 
-              \left( \frac{N_{\mathrm{tri}}}{A_{\mathrm{total}}} \right) 
-              \cdot \left( 1 + \lambda_1 \cdot \frac{\sigma_{\mathrm{area}}}{\mu_{\mathrm{area}}} 
-              + \lambda_2 \cdot \frac{\sigma_{\theta}}{\mu_{\theta}} \right) 
-              \cdot \log(1 + A_{\mathrm{total}})
+              \mathrm{GCS} =
+              \underbrace{\left( \frac{N_{\mathrm{tri}}}{A_{\mathrm{total}}} \right)}_{\text{Triangle density}} \cdot
+              \underbrace{\left( 1 + \lambda_1 \cdot \frac{\sigma_{\mathrm{area}}}{\mu_{\mathrm{area}}}
+              + \lambda_2 \cdot \frac{\sigma_{\theta}}{\mu_{\theta}} \right)}_{\text{Irregularity term}} \cdot
+              \underbrace{\log(1 + A_{\mathrm{total}})}_{\text{Global scale weight}}
               \]
             </p>
+
+            <!-- Explanation -->       
             <p>
-              where \( N_{\mathrm{tri}} \): triangle count, 
-              \( A_{\mathrm{total}} \): total surface area, 
-              \( \sigma, \mu \): std/mean of triangle area and dihedral angle,
-              and \( \lambda_1, \lambda_2 \): irregularity weights.
+              where \( N_{\mathrm{tri}} \): total number of triangles, \( A_{\mathrm{total}} \): total surface area (in cm²) of the mesh.
+              The first term, \( \frac{N_{\mathrm{tri}}}{A_{\mathrm{total}}} \), captures the <em>local triangle density</em>,
+              indicating how densely the mesh is tessellated per unit area.
+            </p>
+            <p>
+              The second term reflects <em>structural irregularity</em>, consisting of the coefficient of variation 
+              (i.e., standard deviation over mean) for triangle areas 
+              \( \frac{\sigma_{\mathrm{area}}}{\mu_{\mathrm{area}}} \)
+              and dihedral angles \( \frac{\sigma_{\theta}}{\mu_{\theta}} \).
+              This penalizes highly irregular or distorted regions.
+            </p>
+            <p>
+              The final term, \( \log(1 + A_{\mathrm{total}}) \), applies a <em>scale-aware weighting</em> to account for large-scale surfaces, ensuring that
+              meshes with similar detail but different spatial coverage (e.g., small object vs. large room) receive comparable scores.
+            </p>
+            <p>
+              We set \( \lambda_1 = \lambda_2 = 0.5 \) by default.
             </p>
           </div>
-        </section>
+        </div>
+      </section>
+
 
         <!-- Multi-view SSIM -->
         <section class="section" style="padding-top: 1rem; padding-bottom: 0;">
@@ -377,26 +406,21 @@
             </p>
           </div>
         </section>
-
       </div>
     </div>
   </section>
 
-  <!-- Toggle Script -->
+  <!-- Toggle Logic -->
   <script>
-  function toggleMetrics() {
-    const content = document.getElementById('metrics-content');
-    const title = document.querySelector('.title.is-3');
-    if (content.style.display === 'none') {
-      content.style.display = 'block';
-      title.innerHTML = '▼ Metrics';
-    } else {
-      content.style.display = 'none';
-      title.innerHTML = '▶ Metrics';
+    function toggleMetrics() {
+      const symbol = document.getElementById('metrics-toggle-symbol');
+      const content = document.getElementById('metrics-content');
+      if (!content) return;
+      const isVisible = content.style.display === 'block';
+      content.style.display = isVisible ? 'none' : 'block';
+      symbol.textContent = isVisible ? '►' : '▼';
     }
-  }
   </script>
-
 
   <section class="section teaser-figure" style="padding-top: 0rem; padding-bottom: 1rem;">
     <div class="container is-max-desktop">
